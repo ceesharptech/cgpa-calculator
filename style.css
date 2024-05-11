@@ -1,0 +1,248 @@
+:root{
+    --primary-color: #2A93D5;
+    --primary-color-light: #3DD9D6;
+    --text-dark: rgba(74, 74, 74, 0.8);
+    --text-grey: #BCBCBC;
+    --text-light: #767268;
+    --extra-light: #f3f4f6;
+    --dom-background: #FBFBFB;
+    --white: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--dom-background);
+}
+
+.topHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: 800;
+    font-size: 24px;
+    height: 70px;
+}
+
+.dom-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.main-container {
+    width: 80%;
+    height: auto;
+    background-color: var(--white);
+    border-radius: 24px;
+    padding: 36px;
+}
+
+.currentSemester {
+    color: var(--text-dark);
+}
+
+.subjectBlock {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.textInput {
+    padding: 15px;
+    border: 1px solid #E0E2E6;
+}
+
+.textInput::placeholder{
+    color: var(--text-grey);
+    font-family: "Poppins", sans-serif;
+}
+
+.subjectBlock input:focus {
+    outline: none;
+    border-color: var(--primary-color-light);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    transition: 200ms ease-in;
+}
+
+.subName {
+    border-radius: 15px 0px 0px 15px;
+    width: 40%;
+}
+
+.grade {
+    width: 20%;
+}
+
+.unit {
+    border-radius: 0px 15px 15px 0px;
+    width: 18%;
+}
+
+.cancel-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.ri-close-circle-line {
+    color: #E0E2E6;
+}
+
+.gpa-block {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.gpaResult{
+    color: var(--text-light);
+}
+
+.gpaResult strong {
+    color: black;
+}
+
+.addSubject-Btn{
+    font-family: "Poppins", sans-serif;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+    background-image: linear-gradient(to right, #37CAEC, #3DD9D6);
+}
+
+hr {
+    margin-top: 20px;
+    border: 1px solid #E0E2E6;
+}
+
+.cgpa-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.addSemester-Btn{
+    font-family: "Poppins", sans-serif;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    border-radius: 24px;
+    cursor: pointer;
+    color: var(--primary-color);
+    background: 
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(60deg, var(--primary-color), #37caec) border-box;
+    border: 2px solid transparent;
+    display: inline-block;
+}
+
+.cgpaResult{
+    color: var(--text-light);
+    margin-left: auto;
+}
+
+.cgpaResult strong {
+    color: black;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .subName {
+        width: 82%;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .grade{
+        width: 40%;
+        border-radius: 0px 0px 0px 15px;
+    }
+
+    .unit{
+        width: 30%;
+        border-radius: 0px 0px 15px 0px;
+    }
+
+    .gpa-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cgpa-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        gap: 15px;
+    }
+
+    .cgpaResult {
+        margin: 0;
+    }
+
+    .cancel-icon {
+        width: 23px;
+        height: 23px;
+    }
+
+  }
+
+  @media only screen and (max-width: 400px) {
+    .subName {
+        width: 84%;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .grade{
+        width: 40%;
+        border-radius: 0px 0px 0px 15px;
+    }
+
+    .unit{
+        width: 30%;
+        border-radius: 0px 0px 15px 0px;
+    }
+
+    .gpa-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cgpa-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        gap: 15px;
+    }
+
+    .cgpaResult {
+        margin: 0;
+    }
+
+    .cancel-icon {
+        width: 23px;
+        height: 23px;
+    }
+
+  }
+

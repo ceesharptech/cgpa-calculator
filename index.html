@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <header class="topHeader">CGPA Calculator</header>
+    <div class="dom-container">
+        <div class="main-container">          
+            <h2 class="currentSemester">Semester 1</h2>
+            <div class="subjectsContainer" id="subjectsContainer">
+                <div class="subjectBlock">
+                    <input type="text" class="textInput subName" id="subjectName" placeholder="Subject Name" required>
+                    <input type="text" class="textInput grade" id="subjectGrade" placeholder="Grade" required>
+                    <input type="number" class="textInput unit" id="subjectUnits" placeholder="Units" required min="1">
+                    <!-- <i class="ri-close-circle-line"></i> -->
+                    <img class="cancel-icon" src="icons8-cancel-32.png" alt="">
+                </div>
+                <div class="subjectBlock">
+                    <input type="text" class="textInput subName" id="subjectName" placeholder="Subject Name" required>
+                    <input type="text" class="textInput grade" id="subjectGrade" placeholder="Grade" required>
+                    <input type="number" class="textInput unit" id="subjectUnits" placeholder="Units" required min="1">
+                    <img class="cancel-icon" src="icons8-cancel-32.png" alt="">
+                </div>
+                <div class="subjectBlock">
+                    <input type="text" class="textInput subName" id="subjectName" placeholder="Subject Name" required>
+                    <input type="text" class="textInput grade" id="subjectGrade" placeholder="Grade" required>
+                    <input type="number" class="textInput unit" id="subjectUnits" placeholder="Units" required min="1">
+                    <img class="cancel-icon" src="icons8-cancel-32.png" alt="">
+                </div>
+            </div>
+
+            <div class="gpa-block">
+                <p class="gpaResult">Semester 1 GPA: <strong id="gpa">0.00</strong></p>
+                <button class="addSubject-Btn" id="addSubject-Btn">add subject</button>
+            </div>
+            <hr>
+            <div class="cgpa-block">
+                <button class="addSemester-Btn">add semester</button>
+                <p class="cgpaResult">Your CGPA: <strong>0.00</strong></p>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
