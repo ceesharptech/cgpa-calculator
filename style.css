@@ -1,3 +1,4 @@
+
 :root{
     --primary-color: #2A93D5;
     --primary-color-light: #3DD9D6;
@@ -61,11 +62,11 @@ body {
 
 .textInput {
     padding: 15px;
-    border: 1px solid #E0E2E6;
+    border: 1px solid #a4a5a7;
 }
 
 .textInput::placeholder{
-    color: var(--text-grey);
+    color: #a4a5a7;
     font-family: "Poppins", sans-serif;
 }
 
@@ -165,6 +166,9 @@ hr {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
+    .dom-container{
+        margin-top: 50px;
+    }
     .subName {
         width: 82%;
         border-radius: 15px 15px 0px 0px;
