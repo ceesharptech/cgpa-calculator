@@ -62,11 +62,11 @@ body {
 
 .textInput {
     padding: 15px;
-    border: 1px solid #a4a5a7;
+    border: 1px solid #b4b4b4;
 }
 
 .textInput::placeholder{
-    color: #a4a5a7;
+    color: #b4b4b4;
     font-family: "Poppins", sans-serif;
 }
 

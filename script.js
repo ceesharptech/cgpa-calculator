@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Display GPA
         document.getElementById("gpa").innerText = isNaN(gpa) ? "N/A" : gpa.toFixed(2);
+        document.getElementById("cgpa").innerText = isNaN(gpa) ? "N/A" : gpa.toFixed(2);
     }
 
     // Function to add a new subject block
