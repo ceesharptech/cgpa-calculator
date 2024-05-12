@@ -91,7 +91,7 @@ body {
     width: 18%;
 }
 
-.cancel-icon {
+img.cancel-icon {
     width: 18px;
     height: 18px;
     cursor: pointer;
