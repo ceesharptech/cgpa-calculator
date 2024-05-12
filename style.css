@@ -162,6 +162,21 @@ hr {
     color: black;
 }
 
+.endSection {
+    display: block;
+    margin-top: 50px;
+}
+
+.endMsg {
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 
