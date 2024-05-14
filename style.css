@@ -162,6 +162,35 @@ hr {
     color: black;
 }
 
+.infoSection {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.infoContainer {
+    display: flex;
+    align-items: center;
+    background-color: #e6e7eb;
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+    border: 1px solid #acb1bf;
+    padding: 14px 14px 14px 10px;
+}
+
+.infoTextContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.infoMessage {
+    font-size: 14px;
+}
+
 .endSection {
     display: block;
     margin-top: 50px;
@@ -221,6 +250,21 @@ hr {
     .cancel-icon {
         width: 23px;
         height: 23px;
+    }
+
+    .infoContainer {
+        display: flex;
+        align-items: center;
+        background-color: #e6e7eb;
+        width: 70%;
+        height: auto;
+        border-radius: 15px;
+        border: 1px solid #acb1bf;
+        padding: 14px;
+    }
+
+    .infoMessage {
+        font-size: 12px;
     }
 
   }

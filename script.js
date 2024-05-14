@@ -59,8 +59,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // HTML for the new block
         newBlock.innerHTML = `
-        <input type="text" class="textInput subName" id="subjectName" placeholder="Subject Name" required>
-        <input type="text" class="textInput grade" id="subjectGrade" placeholder="Grade" required>
+        <input type="text" class="textInput subName" id="subjectName" placeholder="Course Code" required>
+        <input type="text" class="textInput grade" id="subjectGrade" placeholder="Grade(A-F)" required>
         <input type="number" class="textInput unit" id="subjectUnits" placeholder="Units" required min="1">
         <img class="cancel-icon" src="icons8-cancel-32.png" alt="">
         `;
