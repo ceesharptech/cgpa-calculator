@@ -4,7 +4,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.addEventListener("input", () => {
         calculateGPA();
+        calculateSubjectCount();
     });
+
+    function calculateSubjectCount() {
+        // Get all subject blocks for the active semester
+        var subjectBlocks = document.querySelectorAll(".subjectsContainer .subjectBlock");
+        var subjectCount = 0;
+
+        // Loop through each subject block
+        subjectBlocks.forEach(function(block) {
+            // Check if any input field has a value
+            var inputs = block.querySelectorAll("input[type='text'], input[type='number']");
+            var hasInput = Array.from(inputs).some(input => input.value.trim() !== '');
+
+            // Increment subject count if any input field has a value
+            if (hasInput) {
+                subjectCount++;
+            }
+        });
+
+        // Display the subject count
+        document.getElementById("numberOfSubjects").innerText = subjectCount;
+    }
 
     // Add event listener for "Add Subject" button
     document.getElementById("addSubject-Btn").addEventListener("click", function() {
@@ -78,9 +100,11 @@ document.addEventListener("DOMContentLoaded", function() {
         newBlock.querySelector(".cancel-icon").addEventListener("click", function() {
             newBlock.remove(); // Remove the block when cancel button is clicked
             calculateGPA(); // Recalculate GPA after removing the block
+            calculateSubjectCount();
         });
 
         // Recalculate GPA after adding the new block
         calculateGPA();
+        calculateSubjectCount();
     }
 });
