@@ -255,6 +255,11 @@ hr {
         gap: 15px;
     }
 
+    .subjectCountBlock {
+        display: flex;
+        justify-content: center;
+    }
+
     .cgpaResult {
         margin: 0;
     }
