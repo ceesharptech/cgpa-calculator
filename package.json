@@ -1,0 +1,14 @@
+{
+  "name": "cgpa-calculator",
+  "version": "1.0.0",
+  "description": "An online web app which allows you calculate your Cummulative Grade Point Average (CGPA)",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
